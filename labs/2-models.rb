@@ -8,6 +8,7 @@
 Salesperson.destroy_all
 # **************************
 
+
 # Lab 2: Models
 # - We've added data into the companies table.  Next, we'll add data
 #   into the salespeople table.  Follow the steps below to insert and

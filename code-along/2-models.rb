@@ -8,6 +8,31 @@
 Company.destroy_all
 # **************************
 
+# SQL COMMAND
+# SELECT COUNT (*) FROM companies;
+
+#Ruby equivalent
+
+puts "there are #{Company.all.count} companies"
+
+new_company = Company.new 
+new_company["name"] = "Apple"
+new_company["city"] = "Cupertino"
+new_company["state"] = "CA"
+new_company["url"] = "https://apple.com"
+# puts new_company.inspect
+new_company.save
+
+new_company = Company.new 
+new_company["name"] = "Amazon"
+new_company["city"] = "Seattle"
+new_company["state"] = "WA"
+new_company["url"] = "https://amazon.com"
+# puts new_company.inspect
+new_company.save
+
+puts "there are #{Company.all.count} companies"
+
 # - Insert, read, update, and delete rows in companies table
 #   (i.e. full CRUD of company data).
 
