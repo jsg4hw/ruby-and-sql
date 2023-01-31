@@ -57,7 +57,6 @@ sarah.save
 # Ben Block
 # Brian Eng
 
-# puts "#{sarah.first_name} #{sarah.last_name}"
 all_salespeople = Salesperson.all
 # puts all_salespeople.inspect  #is an array
 
