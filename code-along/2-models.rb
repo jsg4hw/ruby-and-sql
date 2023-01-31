@@ -98,9 +98,16 @@ apple = Company.find_by({"name" => "Apple"})
 
 # 6. update a row's column value
 
-amazon = Company.find_by({"name" => "Amazon"})
-puts amazon.inspect 
-amazon["url"] = "https://www.amazon.com"
-amazon.save
-puts amazon.inspect 
+# amazon = Company.find_by({"name" => "Amazon"})
+# puts amazon.inspect 
+# amazon["url"] = "https://www.amazon.com"
+# amazon.save
+# puts amazon.inspect 
 # 7. delete a row
+
+twitter = Company.find_by({"name" => "Twitter"})
+puts twitter.inspect 
+twitter.destroy 
+
+twitter = Company.find_by({"name" => "Twitter"})
+puts twitter.inspect 
